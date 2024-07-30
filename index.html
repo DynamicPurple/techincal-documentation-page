@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Getting_Started">Getting Started</a></li>
+            <li><a class="nav-link" href="#Basic_Usage">Basic Usage</a></li>
+            <li><a class="nav-link" href="#Modules_and_Packages">Modules and Packages</a></li>
+            <li><a class="nav-link" href="#Error_Handling_and_Best_Practices">Error Handling and Best Practices</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>Python is a high-level, interpreted programming language known for its simplicity and readability. It supports procedural, object-oriented, and functional programming paradigms.</p>
+                <p>This documentation provides a guide to getting started with Python, its core features, and usage tips.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Getting_Started">
+            <header>Getting Started</header>
+            <ol>
+                <li>Installation:
+                    <ul>
+                        <li>Windows:
+                            <p>Download and run the installer from <a href="https://www.python.org/downloads/" target="_blank">python.org</a>, ensuring "Add Python to PATH" is checked.</p>
+                        </li>
+                        <li>macOS:
+                            <p>Download and run the installer from <a href="https://www.python.org/downloads/" target="_blank">python.org</a>.</p>
+                        </li>
+                        <li>Linux:
+                            <p>Install using the package manager:</p>
+                            <pre class="terminal"><code>sudo apt update
+sudo apt install python3</code></pre>
+                        </li>
+                    </ul>
+                </li>
+                <li>Quick Start:
+                    <ol>
+                        <li>Open your terminal or command prompt.</li>
+                        <li>Enter the Python shell by typing <code>python</code> or <code>python3</code>.</li>
+                        <li>Execute:
+                            <pre class="terminal"><code>print("Hello, World!")</code></pre>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
+        <section class="main-section" id="Basic_Usage">
+            <header>Basic Usage</header>
+            <ol>
+                <li>Basic Syntax:
+                    <p>Python uses indentation for code blocks and comments with <code>#</code>:</p>
+                    <pre class="terminal"><code># This is a comment
+print("Hello, World!")  # Output a message</code></pre>
+                </li>
+                <li>Data Types:
+                    <ul>
+                        <li>String:
+                            <pre class="terminal"><code>name = "Joe"</code></pre>
+                        </li>
+                        <li>Integer:
+                            <pre class="terminal"><code>age = 20</code></pre>
+                        </li>
+                        <li>List:
+                            <pre class="terminal"><code>fruits = ["apple", "banana", "cherry"]</code></pre>
+                        </li>
+                        <li>Tuple:
+                            <pre class="terminal"><code>coordinates = (10.0, 20.0)</code></pre>
+                        </li>
+                        <li>Dictionary:
+                            <pre class="terminal"><code>person = {"name": "Alice", "age": 30}</code></pre>
+                        </li>
+                    </ul>
+                </li>
+                <li>Control Flow:
+                    <ul>
+                        <li>If Statement:
+                            <pre class="terminal"><code>if age > 18:
+    print("Adult")</code></pre>
+                            <pre class="terminal"><code>else:
+    print("Minor")</code></pre>
+                        </li>
+                        <li>Loops:
+                            <pre class="terminal"><code>for fruit in fruits:
+    print(fruit)</code></pre>
+                            <pre class="terminal"><code>while age < 35:
+    age += 1</code></pre>
+                        </li>
+                    </ul>
+                </li>
+                <li>Functions:
+                    <p>Define a function and call it:</p>
+                    <pre class="terminal"><code>def greet(name):
+    return f"Hello, {name}!"
+print(greet("Alice"))</code></pre>
+                </li>
+            </ol>
+        </section>
+        <section class="main-section" id="Modules_and_Packages">
+            <header>Modules and Packages</header>
+            <ol>
+                <li>Importing Modules:
+                    <p>Import modules using:</p>
+                    <pre class="terminal"><code>import os
+import sys</code></pre>
+                </li>
+                <li>File Handling:
+                    <p>Read a file:</p>
+                    <pre class="terminal"><code>with open("file.txt", "r") as file:
+    content = file.read()
+    print(content)</code></pre>
+                </li>
+                <li>Third-party Packages:
+                    <p>Install and use packages:</p>
+                    <ul>
+                        <li>requests:
+                            <pre class="terminal"><code>import requests
+response = requests.get("https://api.example.com")
+print(response.json())</code></pre>
+                        </li>
+                        <li>numpy:
+                            <pre class="terminal"><code>import numpy as np
+array = np.array([1, 2, 3])
+print(array)</code></pre>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        <section class="main-section" id="Error_Handling_and_Best_Practices">
+            <header>Error Handling and Best Practices</header>
+            <ol>
+                <li>Error Handling:
+                    <p>Handle exceptions using try-except:</p>
+                    <pre class="terminal"><code>try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero")</code></pre>
+                </li>
+                <li>Best Practices:
+                    <p>Follow PEP 8 guidelines for code style and write unit tests to ensure code reliability.</p>
+                </li>
+                <li>Tips and Tricks:
+                    <p>Use list comprehensions for concise code and context managers to handle resources efficiently.</p>
+                </li>
+            </ol>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <p>For more detailed information and official documentation, please visit the <a href="https://docs.python.org/3/" target="_blank">official Python documentation</a>.</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
